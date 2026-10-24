@@ -1,0 +1,79 @@
+
+/* Style the overall page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #eef2f5;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+/* Style the page heading */
+header {
+    background-color: #1c3f60;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/* Style section headings */
+h2 {
+    color: #1c5a85;
+    font-size: 1.5rem;
+}
+
+/* Style the main content area */
+main {
+    max-width: 55rem;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+/* Highlight the introduction */
+.intro {
+    font-weight: bold;
+    color: #455a64;
+}
+
+/* Add space around paragraphs in the main section */
+main p {
+    margin-bottom: 1rem;
+}
+
+/* Make list items easier to read */
+li {
+    margin-bottom: 0.4rem;
+}
+
+/* Keep images from overflowing the page */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style links and their hover effect */
+a {
+    color: #1769aa;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #c0392b;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    color: #607d8b;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
