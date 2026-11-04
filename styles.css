@@ -1,51 +1,148 @@
 
-/* Style the whole page */
+/* Make the entire website ugly */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    background-color: #f0f4f8;
-    color: #333333;
-    line-height: 1.5;
-    padding: 1rem;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1.1rem;
+    color: lime;
+    background: linear-gradient(135deg, yellow, hotpink, cyan, purple);
+    margin: 2rem 0.2rem 4rem 3rem;
+    padding: 0.5rem;
 }
 
-/* Style the main heading */
+/* Give the heading an awful color combination */
+header {
+    background: linear-gradient(to right, red, yellow, blue);
+    color: lime;
+    padding: 2rem 0.3rem 0.5rem 4rem;
+    border: 0.5rem dashed green;
+    margin: 1rem 3rem 0.2rem 0;
+    transform: rotate(-1deg);
+}
+
 h1 {
-    color: white;
-    background-color: #174a7e;
-    padding: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem red;
 }
 
-/* Style section headings */
 h2 {
-    color: #174a7e;
+    color: red;
+    background-color: yellow;
+    padding: 1rem 0.2rem;
+    border: 0.3rem dotted purple;
+    margin: 2rem 0 0.5rem 3rem;
 }
 
-/* Style the introduction using a class */
+/* Make the introduction stand out badly */
 .intro {
+    background-color: magenta;
+    color: yellow;
     font-weight: bold;
+    padding: 2rem 0.3rem 0.2rem 3rem;
+    margin: 0.2rem 2rem 3rem 0;
+    border: 0.4rem double lime;
 }
 
-/* Style paragraphs inside the main section */
+/* Make paragraphs inconsistent */
 main p {
-    margin: 1rem;
+    margin: 2rem 0.2rem 0.5rem 3rem;
+    padding: 0.8rem;
+    background-color: cyan;
+    color: darkred;
 }
 
-/* Style the computer image */
+/* Make lists look disorganized */
+ul {
+    background-color: orange;
+    padding: 2rem 0.5rem 1rem 4rem;
+    margin: 0.5rem 3rem 2rem 0;
+    border: 0.3rem ridge blue;
+}
+
+li {
+    margin: 1.5rem 0 0.2rem 0.5rem;
+    padding: 0.4rem;
+}
+
+li:nth-child(even) {
+    background-color: lime;
+    color: purple;
+}
+
+/* Make images awkwardly placed */
 img {
     max-width: 100%;
     height: auto;
+    margin: 2rem 0 0.5rem 3rem;
+    border: 0.5rem dashed red;
+    transform: rotate(2deg);
 }
 
-/* Change links when the mouse hovers over them */
+/* Make links change color */
+a {
+    color: blue;
+    font-weight: bold;
+    background-color: yellow;
+}
+
 a:hover {
+    color: white;
+    background-color: red;
+}
+
+/* Give the footer unnecessary spacing */
+footer {
+    text-align: right;
+    font-size: 0.8rem;
+    color: red;
+    background-color: lime;
+    padding: 2rem 0.5rem;
+    margin: 4rem 0 0 2rem;
+    border: 0.4rem dotted orange;
+}
+
+/* Three ugly columns on the second page */
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0.2rem 1rem 0;
+}
+
+.column {
+    background: linear-gradient(45deg, orange, magenta, lime);
+    color: blue;
+    padding: 1rem 0.3rem 3rem 1.5rem;
+    border: 0.5rem dashed red;
+    overflow-wrap: anywhere;
+}
+
+.column:nth-child(2) {
+    margin-top: 2rem;
+    background: linear-gradient(90deg, black, yellow);
+    color: cyan;
+}
+
+.column:nth-child(3) {
+    margin-top: 0.3rem;
+    background: linear-gradient(135deg, purple, lime);
     color: red;
 }
 
-/* Style the footer */
-footer {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #555555;
+/* Make the navigation look different */
+nav {
+    background-color: cyan;
+    padding: 1rem;
+    margin: 2rem 0 0 2rem;
+    border: 0.3rem ridge magenta;
+}
+
+/* Stack columns on narrow screens so the page still works */
+@media (max-width: 40rem) {
+    .columns {
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        margin-left: 0;
+    }
 }
