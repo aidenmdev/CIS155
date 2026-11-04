@@ -1,12 +1,113 @@
-
-header {
-    background: linear-gradient(to right, yellow, hotpink, blue);
+body {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1.1rem;
     color: lime;
-    padding: 2rem 0.5rem 0.5rem 3rem;
-    margin: 1rem 2rem 0.5rem 0;
-    border: 0.4rem dashed green;
+    background: linear-gradient(135deg, yellow, hotpink, cyan, purple);
+    margin: 2rem 0.2rem 4rem 3rem;
+    padding: 0.5rem;
+    line-height: 1.5;
 }
 
+/* Header */
+header {
+    background: linear-gradient(to right, red, yellow, blue);
+    color: lime;
+    padding: 2rem 0.3rem 0.5rem 3rem;
+    border: 0.4rem dashed green;
+    margin: 1rem 2rem 0.5rem 0;
+    transform: rotate(-1deg);
+}
+
+h1 {
+    color: yellow;
+    background-color: red;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px lime;
+}
+
+h2 {
+    color: red;
+    background-color: yellow;
+    padding: 1rem 0.2rem;
+    border: 0.3rem dotted purple;
+    margin: 2rem 0 0.5rem 3rem;
+    text-shadow: 2px 2px cyan;
+}
+
+/* Introduction */
+.intro {
+    color: yellow;
+    background-color: magenta;
+    font-weight: bold;
+    padding: 2rem 0.3rem 0.2rem 3rem;
+    margin: 0.2rem 2rem 3rem 0;
+    border: 0.4rem double lime;
+}
+
+/* Paragraphs */
+p {
+    color: darkblue;
+}
+
+main p {
+    margin: 2rem 0.2rem 0.5rem 3rem;
+    padding: 0.8rem;
+    background-color: cyan;
+    color: darkred;
+}
+
+/* Lists */
+ul {
+    background-color: orange;
+    color: purple;
+    padding: 2rem 0.5rem 1rem 4rem;
+    margin: 0.5rem 3rem 2rem 0;
+    border: 0.3rem ridge blue;
+}
+
+li {
+    color: purple;
+    background-color: lime;
+    margin: 1.5rem 0 0.2rem 0.5rem;
+    padding: 0.4rem;
+}
+
+li:nth-child(even) {
+    color: orange;
+    background-color: blue;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 0 0.5rem 3rem;
+    border: 0.5rem dashed red;
+    transform: rotate(2deg);
+}
+
+/* Links */
+a {
+    color: red;
+    font-weight: bold;
+    background-color: yellow;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: lime;
+    background-color: purple;
+}
+
+/* Navigation */
+nav {
+    background-color: cyan;
+    padding: 1rem;
+    margin: 2rem 0 0 2rem;
+    border: 0.3rem ridge magenta;
+}
+
+/* Three-column layout on components page */
 .columns {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -19,6 +120,17 @@ header {
     color: blue;
     padding: 1rem 0.3rem 2rem 1.5rem;
     border: 0.3rem dotted red;
+    overflow-wrap: anywhere;
+}
+
+.column h2 {
+    color: lime;
+    background-color: hotpink;
+}
+
+.column p {
+    color: yellow;
+    background-color: darkblue;
 }
 
 .column:nth-child(2) {
@@ -33,8 +145,14 @@ header {
     color: red;
 }
 
-@media (max-width: 40rem) {
-    .columns {
-        grid-template-columns: 1fr;
-    }
+/* Footer */
+footer {
+    text-align: right;
+    font-size: 0.8rem;
+    color: red;
+    background-color: lime;
+    padding: 2rem 0.5rem;
+    margin: 4rem 0 0 2rem;
+    border: 0.4rem dotted orange;
+    text-shadow: 2px 2px yellow;
 }
